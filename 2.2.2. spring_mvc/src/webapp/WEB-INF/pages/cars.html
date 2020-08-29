@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:td="">
+<head>
+    <!--    <meta charset="UTF-8">-->
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+    <title>Title</title>
+</head>
+<body>
+
+<h1>CARS/МАШИНЫ</h1>
+<table border="4" width="75%">
+    <tr>
+        <td>Name</td>
+        <td>Series</td>
+        <td>Number</td>
+    </tr>
+    <tr>
+        <td>
+            <th:block th:each="msg : ${message}">
+                <h3 th:text="${msg}"></h3>
+            </th:block>
+        </td>
+        <td>
+            <th:block th:each="msg : ${message1}">
+                <h3 th:text="${msg}"></h3>
+            </th:block>
+        </td>
+        <td>
+            <th:block th:each="msg : ${message2}">
+                <h3 th:text="${msg}"></h3>
+            </th:block>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <th:block th:each="msg : ${message3}">
+                <h3 th:text="${msg}"></h3>
+            </th:block>
+        </td>
+        <td>
+            <th:block th:each="msg : ${message4}">
+                <h3 th:text="${msg}"></h3>
+            </th:block>
+        </td>
+        <td>
+            <th:block th:each="msg : ${message5}">
+                <h3 th:text="${msg}"></h3>
+            </th:block>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <th:block th:each="msg : ${message6}">
+                <h3 th:text="${msg}"></h3>
+            </th:block>
+        </td>
+        <td>
+            <th:block th:each="msg : ${message7}">
+                <h3 th:text="${msg}"></h3>
+            </th:block>
+        </td>
+        <td>
+            <th:block th:each="msg : ${message8}">
+                <h3 th:text="${msg}"></h3>
+            </th:block>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
