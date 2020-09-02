@@ -30,6 +30,14 @@ public class WebConfig implements WebMvcConfigurer {
     public WebConfig(ApplicationContext applicationContext) {
         this.applicationContext = applicationContext;
     }
+    @Bean
+    public CookieLocaleResolver localeResolver(){
+        CookieLocaleResolver localeResolver = new CookieLocaleResolver();
+        localeResolver.setDefaultLocale(Locale.ENGLISH);
+        localeResolver.setCookieName("my-locale-cookie");
+        localeResolver.setCookieMaxAge(3600);
+        return localeResolver;
+    }
 
     @Bean
     public SpringResourceTemplateResolver templateResolver() {
@@ -52,14 +60,7 @@ public class WebConfig implements WebMvcConfigurer {
         localeChangeInteceptor.setParamName("locale");
         registry.addInterceptor(localeChangeInteceptor);
     }
-    @Bean
-    public CookieLocaleResolver localeResolver(){
-        CookieLocaleResolver localeResolver = new CookieLocaleResolver();
-        localeResolver.setDefaultLocale(Locale.ENGLISH);
-        localeResolver.setCookieName("my-locale-cookie");
-        localeResolver.setCookieMaxAge(3600);
-        return localeResolver;
-    }
+
 
     @Bean
     public SpringTemplateEngine templateEngine() {
