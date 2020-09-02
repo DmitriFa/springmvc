@@ -2,12 +2,13 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:td="">
 <head>
     <!--    <meta charset="UTF-8">-->
-    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'  />
     <title>Title</title>
 </head>
 <body>
-
-<h1>CARS/МАШИНЫ</h1>
+<p><a href="?locale=en">English</a>|<a href="?locale=ru">Russian</a> </p>
+<!--<h1 th:text="${tablename}">CARS</h1>-->
+<h1 th:text="#{lable.tablename}"></h1>
 <table border="4" width="75%">
     <tr>
         <td>Name</td>
