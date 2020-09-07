@@ -6,9 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class ServiceCarImp implements ServiseCar{
+public class ServiceCarImp implements ServiceCar {
 
-    private Car car;
+   private Car car;
 
     @Override
     public List<Car> getCar() {

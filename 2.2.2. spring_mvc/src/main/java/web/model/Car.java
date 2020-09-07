@@ -21,7 +21,7 @@ public class Car
         return name;
     }
 
-    public String getNumder() {
+    public String getNumber() {
         return numder;
     }
 
